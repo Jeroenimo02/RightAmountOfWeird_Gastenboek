@@ -1,0 +1,122 @@
+html {
+    font-family: 'Merriweather', serif;
+}
+
+.title {
+    padding: 10px;
+    font-size:28px;
+}
+
+.commentform {
+    padding: 15px;
+    border: 1px solid black;
+    min-width: min-content;
+    max-width: 50%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+
+.input-group {
+    padding-right: 15px;
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+}
+
+.commentform input, .commentform textarea {
+    border: 2px #7c7c7c solid;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.commentform input {
+    height: 32px;
+    width: auto;
+}
+
+.commentform textarea {
+    height: 125px;
+}
+
+.commentform input:focus, .commentform textarea:focus {
+    outline: none;
+    border-color: #4a4a4a;
+}
+
+.commentform input:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px #e57c7c solid;
+    background-color: #ffe9e9;
+}
+
+.submitbutton {
+    font-family: 'Merriweather', serif;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.submitbutton:hover {
+    cursor: pointer;
+}
+
+.succes {
+    color: green;
+}
+
+.failed {
+    color: red;
+}
+
+.comments {
+    width: 50%;
+    margin: 35px 0 0 20px;
+}
+
+.comment {
+    margin-top: 20px;
+    align-items: end;
+}
+
+.comment::after {
+    content: "";
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 2px;
+    background-color: black;
+}
+
+.right {
+    margin-top: auto;
+    display: flex;
+    margin-left: auto;
+}
+
+.fullname {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.date {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.email {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.message {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 2;
+}
